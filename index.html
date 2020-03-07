@@ -36,19 +36,29 @@
     }
 
     .bg {
-      background-image: url("img/cover9.svg");
+      background-image: url("cover9.svg");
       height: 100%; 
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
     }
 
-    .remainingdays {
+    .number {
       color: white;
       font-weight: bold;
       font-size: 85px;
       font-family: 'Raleway', sans-serif;
-      padding-left: 5%;
+    }
+
+    .first-number {
+      padding-left: 10%;
+    }
+
+    .letter {
+      color: white;
+      font-weight: bold;
+      font-size: 50px;
+      font-family: 'Raleway', sans-serif;
     }
 
     .signs {
@@ -73,6 +83,11 @@
       padding-top: 2%;
     }
 
+    .direction-row {
+      display: flex;
+      flex-direction: row;
+      align-items:flex-end;
+    }
   </style>
 </head>
 <body>
@@ -86,7 +101,20 @@
       <div class="window1 down-one">
         <span class="remain">Zostáva</span>
         <br>
-          <div class="remainingdays"></div>
+        <div class="direction-row">
+          <div class="remainingdays number first-number"></div>
+          <div class="remainingdaysletter letter"></div>
+
+          <div class="remaininghours number"></div>
+          <div class="remaininghoursletter letter"></div>
+
+          <div class="remainingminutes number"></div>
+          <div class="remainingminutesletter letter"></div>
+          
+          <div class="remainingseconds number"></div>
+          <div class="remainingsecondsletter letter"></div>
+        </div>
+          
       </div>
       <div class="window down-two"> 
       </div>

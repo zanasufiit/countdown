@@ -1,4 +1,4 @@
-var interval = 20000;  
+var interval = 2000;  
 
 function doAjax() {
     $.ajax({
@@ -11,6 +11,7 @@ function doAjax() {
     });
 }
 
+doAjax()
 setInterval(doAjax, interval);
 
 var countDownDate = new Date("Mar 11, 2020 23:59:59").getTime();
@@ -25,8 +26,20 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
-  document.querySelector('.remainingdays').textContent = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  // document.querySelector('.remainingdaysletter').textContent = days + "d " + hours + "h "
+  // + minutes + "m " + seconds + "s ";
+
+  document.querySelector('.remainingdaysletter').textContent = "d "
+  document.querySelector('.remaininghoursletter').textContent = "h "
+  document.querySelector('.remainingminutesletter').textContent = "m "
+  document.querySelector('.remainingsecondsletter').textContent = "s "
+
+
+  document.querySelector('.remainingdays').textContent = days 
+  document.querySelector('.remaininghours').textContent = hours
+  document.querySelector('.remainingminutes').textContent = minutes
+  document.querySelector('.remainingseconds').textContent = seconds
+
     
   if (distance < 0) {
     clearInterval(x);
