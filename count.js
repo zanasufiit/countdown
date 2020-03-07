@@ -1,4 +1,4 @@
-var interval = 2000;  
+var interval = 30000;  
 
 function doAjax() {
     $.ajax({
@@ -25,9 +25,6 @@ var x = setInterval(function() {
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // document.querySelector('.remainingdaysletter').textContent = days + "d " + hours + "h "
-  // + minutes + "m " + seconds + "s ";
 
   document.querySelector('.remainingdaysletter').textContent = "d "
   document.querySelector('.remaininghoursletter').textContent = "h "

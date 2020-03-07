@@ -26,6 +26,7 @@
       width: 50%;
       height: 50%;
       display: flex;
+      align-items: flex-end;
     }
 
     .window1 {
@@ -46,18 +47,18 @@
     .number {
       color: white;
       font-weight: bold;
-      font-size: 85px;
+      font-size: 105px;
       font-family: 'Raleway', sans-serif;
     }
 
     .first-number {
-      padding-left: 10%;
+      padding-left: 4%;
     }
 
     .letter {
       color: white;
       font-weight: bold;
-      font-size: 50px;
+      font-size: 65px;
       font-family: 'Raleway', sans-serif;
     }
 
@@ -75,12 +76,12 @@
     }
 
     .remain {
+      margin: 0 auto;
       color: white;
       font-weight: bold;
       font-size: 52px;
       font-family: 'Raleway', sans-serif;
-      padding-left: 25%;
-      padding-top: 2%;
+      margin-left: 25%;
     }
 
     .direction-row {
@@ -93,13 +94,13 @@
 <body>
   <div class="bg">
     <div class="container">
-      <div class="window up-one">
+      <div class="window">
+        <span class="remain">ZOSTÁVA</span>
       </div>
-      <div class="window up-two">
+      <div class="window">
         <div class="signs"></div>
       </div>
-      <div class="window1 down-one">
-        <span class="remain">Zostáva</span>
+      <div class="window1">
         <br>
         <div class="direction-row">
           <div class="remainingdays number first-number"></div>
@@ -116,7 +117,7 @@
         </div>
           
       </div>
-      <div class="window down-two"> 
+      <div class="window"> 
       </div>
     </div>  
   </div>
